@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIMPLE CALCULATOR</title>
+    </head>
+    <body>
+        <label for="Num1">Number1: </label>
+        <input type="number" id="Num1"/><br><br>
+        <label for="Num2">Number2: </label>
+        <input type="number" id="Num2"/><br><br>
+       
+        
+
+        <button onclick = "add()"> + </button>
+        <button onclick = "sub()"> - </button>
+        <button onclick = "mul()"> * </button>
+        <button onclick = "div()"> / </button>
+        
+        <br><br>
+
+
+        <label for="resultBox">Result: </label>
+        <input type="text" id="resultBox" readonly>
+
+        <script>
+            let result = 0;
+            function add(){
+                let Num1 = Number(document.getElementById("Num1").value);
+                let Num2 = Number(document.getElementById("Num2").value);
+                result = Num1 + Num2;
+                document.getElementById("resultBox").value = result;
+            }
+            function sub(){
+                let Num1 = Number(document.getElementById("Num1").value);
+                let Num2 = Number(document.getElementById("Num2").value);
+                result = Num1 - Num2;
+                document.getElementById("resultBox").value = result;
+            }
+            function mul(){
+                let Num1 = Number(document.getElementById("Num1").value);
+                let Num2 = Number(document.getElementById("Num2").value);
+                result = Num1 * Num2;
+                 document.getElementById("resultBox").value = result;
+            }
+            function div(){
+                let Num1 = Number(document.getElementById("Num1").value);
+                let Num2 = Number(document.getElementById("Num2").value);
+                if(Num2 != 0){
+                result = Num1 / Num2;
+                }else{
+                    result = "undefined";
+                }
+                 document.getElementById("resultBox").value = result;
+            }
+
+            function result1(){
+                document.getElementById("resultBox").value = result;
+            }
+        </script>
+    </body>
+</html>
+    
