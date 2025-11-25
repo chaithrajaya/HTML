@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter App</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <input type="text" id="demo1" readonly/><br><br>
+        <button onclick="increment()">INCREMENT</button>
+        <button onclick="decrement()">DECREMENT</button>
+        <button onclick="reset()">RESET</button>
+
+    </body>
+    <script>
+        let counter = 0;
+        function increment(){
+            counter++;
+            document.getElementById("demo1").value = counter;
+            
+
+        }
+        function decrement(){
+             counter--;
+            document.getElementById("demo1").value = counter;
+            
+
+        }
+        function reset(){
+             counter = 0;
+            document.getElementById("demo1").value = counter;
+            
+
+        }
+    </script>
+</html>
