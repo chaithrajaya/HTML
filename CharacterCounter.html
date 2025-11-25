@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHARACTER COUNTER</title>
+    </head>
+    <body>
+        <p>CHARACTER COUNT IS: </p>
+        <p id="character"> </p>
+        <input type="text" id="demo" oninput="characterCounter()"/>
+        
+    </body>
+    <script>
+        function characterCounter(){
+            let input = document.getElementById("demo").value;
+            let count = input.length;
+            document.getElementById("character").innerHTML = count;
+            
+
+        }
+
+    </script>
+</html>
