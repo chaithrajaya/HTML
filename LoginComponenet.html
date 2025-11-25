@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+    </head>
+    <body>
+        <label for="name">USER NAME:</label>
+        <input type="text" id="name"/><br><br>
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password"/><br><br>
+        <button onclick="showhidepassword()">SHOWHIDEPASSWORD</button>
+       
+        
+    </body>
+    <script>
+        function showhidepassword(){
+        let username = document.getElementById("name");
+        let OTP= document.getElementById("password");
+        if(OTP.type==="password"){
+            OTP.type = "text";
+        }
+        else{
+           OTP.type="password";
+        }
+        }
+        
+    </script>
+
+    
+</html>
